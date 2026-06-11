@@ -28,8 +28,16 @@
       { "category": "Prompt-Injection Surface", "grade": "Strong" },
       { "category": "LLM Cost Efficiency", "grade": "Satisfactory", "why": "LLM call(s) nested in a loop — cost scales per item" },
       { "category": "Dead Code & Maintainability", "grade": "Satisfactory", "why": "share of symbols are dead / unreachable" }
+    ],
+    "compliance": [
+      { "framework": "GDPR", "status": "No findings", "screened_for": "personal-data / PII fields written to a log or print sink (CWE-532 data-exposure path)", "gap_count": 0 },
+      { "framework": "CCPA", "status": "No findings", "screened_for": "consumer personal-data fields written to a log or print sink (CWE-532)", "gap_count": 0 },
+      { "framework": "HIPAA", "status": "No findings", "screened_for": "PHI / personal-health fields written to a log or print sink (CWE-532)", "gap_count": 0 },
+      { "framework": "PCI-DSS", "status": "No findings", "screened_for": "hardcoded secrets, exposed cloud keys / private-key blocks, weak cryptography, disabled TLS verification", "gap_count": 0 },
+      { "framework": "SOC 2", "status": "No findings", "screened_for": "unfinished 'fake-done' stubs on live paths + hardcoded secrets / exposed keys (change-management & access-control signals)", "gap_count": 0 }
     ]
   },
+  "_compliance_note": "REDACTED for public: each framework shows status (No findings / Gaps), what was screened, and a gap_count — but NEVER the evidence file:line locations (those stay in the private report). 'No findings' = these specific checks did not fire; NOT a certification.",
   "freshness": "green",
   "disclaimer": "Structural, deterministic pre-screen — NOT a certification. 'No findings' means the specific checks did not fire, not that the system is compliant. Reproduce on the code to verify (see VERIFY.md).",
   "signature": {

@@ -1,17 +1,47 @@
 {
-  "schema_version": "1.0",
+  "commit": "2ffa08af7301",
+  "disclaimer": "Score-only public summary \u2014 no source, no finding locations. Structural, deterministic pre-screen, NOT a certification. 'No findings' = these specific checks did not fire. Reproduce on the code to verify (see VERIFY.md).",
+  "engine_version": "0.86.24",
   "project": {
-    "id": "defiro-agent",
     "name": "defiro-agent",
     "url": null
   },
-  "audit": {
-    "engine_version": "0.86.24",
-    "commit": "2ffa08af7301",
-    "date": "2026-06-11T07:44:10Z",
+  "report_type": "AI Code Audit (public score)",
+  "schema_version": "1.0",
+  "score": {
     "ai_slop_pct": 3,
-    "risk_pct": 25,
-    "risk_band": "Medium",
+    "compliance": [
+      {
+        "framework": "CCPA",
+        "gap_count": 1,
+        "screened_for": "consumer personal-data fields written to a log or print sink (CWE-532)",
+        "status": "Gaps"
+      },
+      {
+        "framework": "GDPR",
+        "gap_count": 1,
+        "screened_for": "personal-data / PII fields written to a log or print sink (CWE-532 data-exposure path)",
+        "status": "Gaps"
+      },
+      {
+        "framework": "HIPAA",
+        "gap_count": 1,
+        "screened_for": "PHI / personal-health fields written to a log or print sink (CWE-532)",
+        "status": "Gaps"
+      },
+      {
+        "framework": "PCI-DSS",
+        "gap_count": 0,
+        "screened_for": "hardcoded secrets, exposed cloud API keys / private-key blocks, weak cryptography, and disabled TLS verification (cardholder-data protection signals)",
+        "status": "No findings"
+      },
+      {
+        "framework": "SOC 2",
+        "gap_count": 4,
+        "screened_for": "unfinished 'fake-done' stubs on live code paths + hardcoded secrets / exposed keys (change-management & access-control signals)",
+        "status": "Gaps"
+      }
+    ],
     "dead_code_pct": 2.5,
     "maturity": [
       {
@@ -62,10 +92,18 @@
         "category": "Dead Code & Maintainability",
         "grade": "Satisfactory"
       }
-    ]
+    ],
+    "risk_band": "Medium",
+    "risk_pct": 25,
+    "security": {
+      "critical_reachable": 0,
+      "high": 1,
+      "medium": 0
+    }
   },
+  "tool": "ArgosBrain",
+  "published_at": "2026-06-11T07:58:39Z",
   "freshness": "green",
-  "disclaimer": "Structural, deterministic pre-screen \u2014 NOT a certification. Reproduce on the code to verify (see VERIFY.md). Score-only: no source, no finding locations.",
   "signature": {
     "algorithm": "ed25519",
     "blake3": "8fa698c40e13badd16b5375154ce1f3ab1a6a9ec43eb8eb1defe99d1009e1d98",
