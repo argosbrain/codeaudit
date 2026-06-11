@@ -1,8 +1,8 @@
 {
-  "_comment": "Public directory index — one row per published project. Written ONLY by the ArgosBrain publishing service. Seeded empty; entries are appended as projects publish.",
+  "_comment": "Public directory index \u2014 one row per published project. Written ONLY by the ArgosBrain publishing service. Seeded empty; entries are appended as projects publish.",
   "schema_version": "1.0",
   "registry": "argosbrain/codeaudit",
-  "generated": "2026-06-11T11:35:41.075Z",
+  "generated": "2026-06-11T15:30:00.000Z",
   "projects": [
     {
       "id": "defiro-agent",
@@ -16,6 +16,45 @@
       "freshness": "green",
       "owner_hash": "a1fc453966ee5aff",
       "report": "reports/defiro-agent/latest.json"
+    },
+    {
+      "id": "argosvoice",
+      "name": "argosvoice",
+      "risk_pct": 0,
+      "risk_band": "Low",
+      "ai_slop_pct": 1,
+      "compliance_gaps": 0,
+      "commit": "2e763f605bf8",
+      "date": "2026-06-11T15:30:00.000Z",
+      "freshness": "green",
+      "owner_hash": "bc0674165ce5a2bd",
+      "report": "reports/argosvoice/latest.json"
+    },
+    {
+      "id": "client-portal",
+      "name": "client-portal",
+      "risk_pct": 0,
+      "risk_band": "Low",
+      "ai_slop_pct": 2,
+      "compliance_gaps": 0,
+      "commit": "938271e25586",
+      "date": "2026-06-11T15:30:00.000Z",
+      "freshness": "green",
+      "owner_hash": "bc0674165ce5a2bd",
+      "report": "reports/client-portal/latest.json"
+    },
+    {
+      "id": "retellportal",
+      "name": "retellportal",
+      "risk_pct": 0,
+      "risk_band": "Low",
+      "ai_slop_pct": 5,
+      "compliance_gaps": 0,
+      "commit": "5d70170b1b17",
+      "date": "2026-06-11T15:30:00.000Z",
+      "freshness": "green",
+      "owner_hash": "bc0674165ce5a2bd",
+      "report": "reports/retellportal/latest.json"
     }
   ]
 }

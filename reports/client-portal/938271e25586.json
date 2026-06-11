@@ -1,0 +1,116 @@
+{
+  "commit": "938271e25586",
+  "disclaimer": "Score-only public summary \u2014 no source, no finding locations. Structural, deterministic pre-screen, NOT a certification. 'No findings' = these specific checks did not fire. Reproduce on the code to verify (see VERIFY.md).",
+  "engine_version": "0.86.29",
+  "project": {
+    "name": "client-portal",
+    "url": null
+  },
+  "report_type": "AI Code Audit (public score)",
+  "schema_version": "1.0",
+  "score": {
+    "ai_slop_pct": 2,
+    "compliance": [
+      {
+        "framework": "CCPA",
+        "gap_count": 0,
+        "screened_for": "consumer personal-data fields written to a log or print sink (CWE-532)",
+        "status": "No findings"
+      },
+      {
+        "framework": "GDPR",
+        "gap_count": 0,
+        "screened_for": "personal-data / PII fields written to a log or print sink (CWE-532 data-exposure path)",
+        "status": "No findings"
+      },
+      {
+        "framework": "HIPAA",
+        "gap_count": 0,
+        "screened_for": "PHI / personal-health fields written to a log or print sink (CWE-532)",
+        "status": "No findings"
+      },
+      {
+        "framework": "PCI-DSS",
+        "gap_count": 0,
+        "screened_for": "hardcoded secrets, exposed cloud API keys / private-key blocks, weak cryptography, and disabled TLS verification (cardholder-data protection signals)",
+        "status": "No findings"
+      },
+      {
+        "framework": "SOC 2",
+        "gap_count": 0,
+        "screened_for": "unfinished 'fake-done' stubs on live code paths + hardcoded secrets / exposed keys (change-management & access-control signals)",
+        "status": "No findings"
+      }
+    ],
+    "dead_code_pct": 2.0,
+    "maturity": [
+      {
+        "category": "Authentication & Access Control",
+        "grade": "Strong"
+      },
+      {
+        "category": "Injection & Input Handling",
+        "grade": "Strong"
+      },
+      {
+        "category": "Cryptography & Key Management",
+        "grade": "Strong"
+      },
+      {
+        "category": "Secrets & Credentials",
+        "grade": "Strong"
+      },
+      {
+        "category": "Memory Safety",
+        "grade": "Strong"
+      },
+      {
+        "category": "Supply Chain",
+        "grade": "Strong"
+      },
+      {
+        "category": "Configuration",
+        "grade": "Strong"
+      },
+      {
+        "category": "Data Privacy & PII Handling",
+        "grade": "Strong"
+      },
+      {
+        "category": "AI-Generated Code Integrity",
+        "grade": "Strong"
+      },
+      {
+        "category": "Prompt-Injection Surface",
+        "grade": "Strong"
+      },
+      {
+        "category": "LLM Cost Efficiency",
+        "grade": "Strong"
+      },
+      {
+        "category": "Dead Code & Maintainability",
+        "grade": "Satisfactory"
+      }
+    ],
+    "risk_band": "Low",
+    "risk_pct": 0,
+    "security": {
+      "critical_reachable": 0,
+      "high": 0,
+      "medium": 0
+    }
+  },
+  "tool": "ArgosBrain",
+  "published_at": "2026-06-11T15:30:00.000Z",
+  "freshness": "green",
+  "owner_hash": "bc0674165ce5a2bd",
+  "signature": {
+    "algorithm": "ed25519",
+    "blake3": "b7b7ef338efca706af7ee8f7464af6aa263e4be02262cb81117b7d8de0a59a9c",
+    "hash_algorithm": "blake3",
+    "public_key_b64": "jt3lL4CKCGgUqTGphZGTgbYmDqdmlAGyueYzp9FfDYQ=",
+    "signature_b64": "QCevQxCZaUaekYyGipojDNft4ZgPR9ubnHYpmgsQniHheL6+ACFhufCvtl5h4DZ9eO02Q91BsltjsSq2vDI8Cg==",
+    "signed_artifact": "audit.md"
+  }
+}
