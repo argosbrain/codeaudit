@@ -1,6 +1,6 @@
 {
   "commit": "2ffa08af7301",
-  "disclaimer": "Score-only public summary \u2014 no source, no finding locations. Structural, deterministic pre-screen, NOT a certification. 'No findings' = these specific checks did not fire. Reproduce on the code to verify (see VERIFY.md).",
+  "disclaimer": "Score-only public summary — no source, no finding locations. Structural, deterministic pre-screen, NOT a certification. 'No findings' = these specific checks did not fire. Reproduce on the code to verify (see VERIFY.md).",
   "engine_version": "0.86.24",
   "project": {
     "name": "defiro-agent",
@@ -102,8 +102,9 @@
     }
   },
   "tool": "ArgosBrain",
-  "published_at": "2026-06-11T07:58:39Z",
+  "published_at": "2026-06-11T08:38:11.332Z",
   "freshness": "green",
+  "owner_hash": "a1fc453966ee5aff",
   "signature": {
     "algorithm": "ed25519",
     "blake3": "8fa698c40e13badd16b5375154ce1f3ab1a6a9ec43eb8eb1defe99d1009e1d98",
