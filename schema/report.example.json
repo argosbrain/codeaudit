@@ -1,0 +1,40 @@
+{
+  "_comment": "SCORE-ONLY public report shape. This is the ONLY shape published to the registry: scores, category grades, and the per-category one-line reason — NEVER source, file paths, or finding locations. This file is an illustrative EXAMPLE/schema, not a real published audit.",
+  "schema_version": "1.0",
+  "project": {
+    "id": "example-org__example-repo",
+    "name": "example-org/example-repo",
+    "url": "https://github.com/example-org/example-repo"
+  },
+  "audit": {
+    "engine_version": "0.86.24",
+    "commit": "0000000000000000000000000000000000000000",
+    "date": "2026-06-11T00:00:00Z",
+    "ai_slop_pct": 3,
+    "risk_pct": 0,
+    "risk_band": "Low",
+    "exposure_findings": 83,
+    "dead_code_pct": 3.3,
+    "maturity": [
+      { "category": "Authentication & Access Control", "grade": "Strong" },
+      { "category": "Injection & Input Handling", "grade": "Strong" },
+      { "category": "Cryptography & Key Management", "grade": "Strong" },
+      { "category": "Secrets & Credentials", "grade": "Strong" },
+      { "category": "Memory Safety", "grade": "Strong" },
+      { "category": "Supply Chain", "grade": "Moderate", "why": "build-time fetch-and-execute finding(s) (e.g. a curl|sh install line)" },
+      { "category": "Configuration", "grade": "Strong" },
+      { "category": "Data Privacy & PII Handling", "grade": "Strong" },
+      { "category": "AI-Generated Code Integrity", "grade": "Strong" },
+      { "category": "Prompt-Injection Surface", "grade": "Strong" },
+      { "category": "LLM Cost Efficiency", "grade": "Satisfactory", "why": "LLM call(s) nested in a loop — cost scales per item" },
+      { "category": "Dead Code & Maintainability", "grade": "Satisfactory", "why": "share of symbols are dead / unreachable" }
+    ]
+  },
+  "freshness": "green",
+  "disclaimer": "Structural, deterministic pre-screen — NOT a certification. 'No findings' means the specific checks did not fire, not that the system is compliant. Reproduce on the code to verify (see VERIFY.md).",
+  "signature": {
+    "alg": "ed25519",
+    "public_key_id": "argosbrain-audit-key-v1",
+    "value": "<base64 ed25519 signature over the deterministic report body>"
+  }
+}

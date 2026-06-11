@@ -1,0 +1,7 @@
+{
+  "_comment": "Public directory index — one row per published project. Written ONLY by the ArgosBrain publishing service. Seeded empty; entries are appended as projects publish.",
+  "schema_version": "1.0",
+  "registry": "argosbrain/codeaudit",
+  "generated": null,
+  "projects": []
+}
