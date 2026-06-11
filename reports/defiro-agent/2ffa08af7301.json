@@ -1,7 +1,7 @@
 {
   "commit": "2ffa08af7301",
   "disclaimer": "Score-only public summary — no source, no finding locations. Structural, deterministic pre-screen, NOT a certification. 'No findings' = these specific checks did not fire. Reproduce on the code to verify (see VERIFY.md).",
-  "engine_version": "0.86.24",
+  "engine_version": "0.86.26",
   "project": {
     "name": "defiro-agent",
     "url": null
@@ -102,15 +102,15 @@
     }
   },
   "tool": "ArgosBrain",
-  "published_at": "2026-06-11T08:38:11.332Z",
+  "published_at": "2026-06-11T11:35:41.075Z",
   "freshness": "green",
   "owner_hash": "a1fc453966ee5aff",
   "signature": {
     "algorithm": "ed25519",
-    "blake3": "8fa698c40e13badd16b5375154ce1f3ab1a6a9ec43eb8eb1defe99d1009e1d98",
+    "blake3": "695f3fc8b9f45c05be81e62de5bd5d9ebb7b608e11eb89dfd2b442f0da247b09",
     "hash_algorithm": "blake3",
     "public_key_b64": "jt3lL4CKCGgUqTGphZGTgbYmDqdmlAGyueYzp9FfDYQ=",
-    "signature_b64": "WHgjHX08/0jr4IBkKzBiobGkrBepTWrWkvfZweTsAyFha2/favhdGsRyI83t/rwNFOtYYVvjWYehGQ6KniidAg==",
+    "signature_b64": "qRV9kOo3+gFSLYBZ/XB2G89Jh/TczfgmKfWk0dvAahH5MorPb8aBI67mnw4eWgQslC2m82ar0En3O7P04hIJBA==",
     "signed_artifact": "audit.md"
   }
 }
