@@ -1,8 +1,8 @@
 {
-  "_comment": "Public directory index \u2014 one row per published project. Written ONLY by the ArgosBrain publishing service. Seeded empty; entries are appended as projects publish.",
+  "_comment": "Public directory index — one row per published project. Written ONLY by the ArgosBrain publishing service. Seeded empty; entries are appended as projects publish.",
   "schema_version": "1.0",
   "registry": "argosbrain/codeaudit",
-  "generated": "2026-06-11T07:58:39Z",
+  "generated": "2026-06-11T08:38:11.332Z",
   "projects": [
     {
       "id": "defiro-agent",
@@ -12,8 +12,9 @@
       "ai_slop_pct": 3,
       "compliance_gaps": 4,
       "commit": "2ffa08af7301",
-      "date": "2026-06-11T07:58:39Z",
+      "date": "2026-06-11T08:38:11.332Z",
       "freshness": "green",
+      "owner_hash": "a1fc453966ee5aff",
       "report": "reports/defiro-agent/latest.json"
     }
   ]
