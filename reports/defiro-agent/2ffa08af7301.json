@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "defiro-agent",
+    "name": "defiro-agent",
+    "url": null
+  },
+  "audit": {
+    "engine_version": "0.86.24",
+    "commit": "2ffa08af7301",
+    "date": "2026-06-11T07:44:10Z",
+    "ai_slop_pct": 3,
+    "risk_pct": 25,
+    "risk_band": "Medium",
+    "dead_code_pct": 2.5,
+    "maturity": [
+      {
+        "category": "Authentication & Access Control",
+        "grade": "Strong"
+      },
+      {
+        "category": "Injection & Input Handling",
+        "grade": "Moderate"
+      },
+      {
+        "category": "Cryptography & Key Management",
+        "grade": "Satisfactory"
+      },
+      {
+        "category": "Secrets & Credentials",
+        "grade": "Strong"
+      },
+      {
+        "category": "Memory Safety",
+        "grade": "Strong"
+      },
+      {
+        "category": "Supply Chain",
+        "grade": "Strong"
+      },
+      {
+        "category": "Configuration",
+        "grade": "Strong"
+      },
+      {
+        "category": "Data Privacy & PII Handling",
+        "grade": "Satisfactory"
+      },
+      {
+        "category": "AI-Generated Code Integrity",
+        "grade": "Strong"
+      },
+      {
+        "category": "Prompt-Injection Surface",
+        "grade": "Moderate"
+      },
+      {
+        "category": "LLM Cost Efficiency",
+        "grade": "Moderate"
+      },
+      {
+        "category": "Dead Code & Maintainability",
+        "grade": "Satisfactory"
+      }
+    ]
+  },
+  "freshness": "green",
+  "disclaimer": "Structural, deterministic pre-screen \u2014 NOT a certification. Reproduce on the code to verify (see VERIFY.md). Score-only: no source, no finding locations.",
+  "signature": {
+    "algorithm": "ed25519",
+    "blake3": "8fa698c40e13badd16b5375154ce1f3ab1a6a9ec43eb8eb1defe99d1009e1d98",
+    "hash_algorithm": "blake3",
+    "public_key_b64": "jt3lL4CKCGgUqTGphZGTgbYmDqdmlAGyueYzp9FfDYQ=",
+    "signature_b64": "WHgjHX08/0jr4IBkKzBiobGkrBepTWrWkvfZweTsAyFha2/favhdGsRyI83t/rwNFOtYYVvjWYehGQ6KniidAg==",
+    "signed_artifact": "audit.md"
+  }
+}
